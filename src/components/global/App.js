@@ -1,10 +1,15 @@
 import React from 'react';
-import LandingPage from '../landingpage/LandingPage'
+import LandingPage from '../landingpage/LandingPage';
+import Questionaire from '../forms/wizard/Questionaire';
+import { Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <>
-     <LandingPage />
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/form" component={Questionaire} />
+      </Switch>
     </>
   );
 }

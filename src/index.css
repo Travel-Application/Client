@@ -18,6 +18,8 @@ code {
     monospace;
 }
 
+/* LANDING PAGE STYLES */
+
 .main-wrapper {
   display: flex;
   width: 100%;
@@ -86,4 +88,91 @@ code {
   right: 20px;
   margin-top: 2%;
   height: 96vh;
+}
+
+/* QUESTIONS FORM COMPONENT STYLES */
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #FAF6F1;
+}
+
+.form-number-header {
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.13);
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+.budget-form-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.questions-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #FAF6F1;
+  margin: -10% 0 0 0;
+}
+
+.next-button {
+  position: absolute;
+  font-size: 1.4rem;
+  right: 30px;
+  bottom: 30px;
+  background-color: #1F2C4C;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  transform: scale(1.02);
+  background-color: #0b1e4d;
+}
+
+.input-header {
+  color: #1F2C4C;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+input {
+  margin-top: 1%;
+  width: 30%;
+  height: 75px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+hr {
+  width: 50%;
+  height: 20px;
+  background-color: #FFC05F;
+  border: none;
+  border-radius: 20px;
+}
+
+span {
+  color: #FFC05F;
 }

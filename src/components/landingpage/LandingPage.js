@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from './Navigation'
 import Tower from '../../assets/eiffel-tower.svg';
 
@@ -8,7 +9,9 @@ function LandingPage() {
       <div className="main-wrapper">
         <section className="landing-content">
           <h1 className="landing-header">Let us plan your <br /> next destination.</h1>
-          <button className="cta-button button">Start</button>
+          <Link to="/form">
+            <button className="cta-button button">Start</button>
+          </Link>
         </section>
         <Navigation />
         <section className="eiffel-section">
